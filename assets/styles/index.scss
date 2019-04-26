@@ -1,7 +1,49 @@
 @import '~bootstrap/scss/bootstrap';
 
+body {
+  background-color: #1EEBEB;
+}
+
+#change-password {
+  display: none;
+  text-align: center;
+}
+
+#endMessage {
+  text-align: center;
+}
+
+.find-session-container {
+  display: none;
+  padding: 15px 30px;
+  text-align: center;
+}
+
 h1 {
   font-family: 'Yatra One', cursive;
   padding: 20px 50px;
+  text-align: center;
+}
+
+#message {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+#sign-up {
+  padding: 15px 30px;
+  text-align: center;
+}
+
+#sign-in {
+  padding: 15px 30px;
+  text-align: center;
+}
+.sign-out-container {
+  display: none;
+  padding: 15px 30px;
   text-align: center;
 }

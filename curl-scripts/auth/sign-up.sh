@@ -1,6 +1,6 @@
 
 
-curl "https://wdi-library-api.herokuapp.com/sign-up" \
+curl "https://localhost:4741/sign-up" \
   --include \
   --request POST \
   --header "Content-Type: application/json" \
