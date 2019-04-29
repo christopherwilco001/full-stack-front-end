@@ -33,8 +33,11 @@ const signInSuccess = function (data) {
   $('#sign-up').hide(2000)
   store.user = data.user
   $('#change-password').show()
+  $('.show-session-container').show()
   $('.sign-out-container').show()
-  $('.find-session-container').show()
+  $('.create-session-container').show()
+  $('.delete').show()
+  $('.update').show()
   $('form').trigger('reset')
 }
 
@@ -76,10 +79,12 @@ const signOutSuccess = function (data) {
   $('.sign-out-container').hide()
   $('#message').text('Sign out successful!')
   $('#message').show()
+  $('.show-session-container').hide()
   $('#change-password').hide()
-  // $('.container').hide()
-  // $('.stats').hide()
-  $('.find-session-container').hide()
+  $('.create-session-container').hide()
+  $('.content').hide()
+  $('.delete').hide()
+  $('.update').hide()
   store.user = null
   $('form').trigger('reset')
 }

@@ -14,10 +14,10 @@
     <body>
       <div class="sign-up-container">
         <form id="sign-up">
-          <input type="text" name="credentials[email]" placeholder="Email">
+          <input type="email" name="credentials[email]" placeholder="Email">
           <input type="password" name="credentials[password]" placeholder="Password">
           <input type="password" name="credentials[password_confirmation]" placeholder="Password Confirmation" >
-          <input type="submit" value="Sign Up!">
+          <input type="submit" value="Sign Up!" class="btn btn-secondary btn-sm">
         </form>
       </div>
 
@@ -25,35 +25,62 @@
         <form id="sign-in">
           <input type="email" name="credentials[email]" placeholder="Email">
           <input type="password" name="credentials[password]" placeholder="Password">
-          <input type="submit" value="Sign In!">
+          <input type="submit" value="Sign In!" class="btn btn-secondary btn-sm">
         </form>
       </div>
 
-      <div class="find-session-container">
-        <form id="find-session">
-            <input type="submit" value="Find Session">
-        </form>
-      </div>
-
-      <div id="message"></div>
-      <div id="endMessage"></div>
 
 
       <h1>Player Development</h1>
 
-      <div class="sign-out-container">
-        <form id="sign-out">
-            <input type="submit" value="Sign Out">
+      <div id="message"></div>
+      <div id="endMessage"></div>
+
+      <div class="create-session-container">
+        <form id="create-session">
+          <input type="submit" value="Create Session" class="btn btn-outline-secondary">
+          <input type="text" name="session[coach]" placeholder="Coach">
+          <input type="text" name="session[length]" placeholder="Length">
+          <input type="text" name="session[activity]" placeholder="Activity">
         </form>
       </div>
 
-      <form id="change-password">
-        <input type="password" name="passwords[old]" placeholder="Old password">
-        <input type="password" name="passwords[new]" placeholder="New password">
-        <input type="submit" value="Change Password">
-      </form>
-      <footer>
-        <p> Created by: Christopher Wilcox </p>
-      </footer>
-    </body>
+      <div class="show-session-container">
+        <button id="allSessions" class="btn btn-secondary btn-sm">All Sessions</button>
+      </div>
+
+      <!-- <div class="update-session-container">
+      <form id="update-session">
+      <input type="submit" value="Update Session">
+      <input type="text" name="session[coach]" placeholder="Coach">
+      <input type="text" name="session[length]" placeholder="Length">
+      <input type="text" name="session[activity]" placeholder="Activity">
+      <input type="text" name="session[id]" placeholder="Session Id">
+    </form>
+  </div> -->
+
+  <!-- <div class="delete-session-container">
+  <form id="delete-session">
+  <input type="submit" value="Delete Session">
+</form>
+</div> -->
+
+<div class="sign-out-container">
+  <form id="sign-out">
+    <input type="submit" value="Sign Out!" class="btn btn-secondary btn-sm">
+  </form>
+</div>
+
+<form id="change-password">
+  <input type="password" name="passwords[old]" placeholder="Old password">
+  <input type="password" name="passwords[new]" placeholder="New password">
+  <input type="submit" value="Change Password" class="btn btn-outline-secondary">
+</form>
+<main>
+  <div id="content" class="content"></div>
+</main>
+<footer>
+  <section>Created by: Christopher Wilcox</section>
+</footer>
+</body>
 </html>

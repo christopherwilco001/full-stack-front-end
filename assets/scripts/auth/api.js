@@ -40,21 +40,9 @@ const changePassword = function (data) {
   })
 }
 
-const findSession = function () {
-  return $.ajax({
-    url: config.apiUrl + '/session',
-    method: 'GET',
-    headers: {
-      Authorization: 'Token token=' + store.user.token
-    },
-    data: '{}'
-  })
-}
-
 module.exports = {
   signUp,
   signIn,
   changePassword,
-  signOut,
-  findSession
+  signOut
 }
