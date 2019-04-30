@@ -8,12 +8,12 @@
       <p>ID: {{session.id}}</p>
 
       <form class="delete" data-id="{{session.id}}">
-        <button data-id="{{session.id}}" class="btn btn-info btn-sm delete">Delete Session</button>
+        <button data-id="{{session.id}}" class="btn btn-danger btn-sm delete">Delete Session</button>
       </form>
 
     <form class="update" data-id="{{session.id}}">
       <button type="submit" value="Update Session" data-id="{{session.id}}"
-      class="btn btn-info btn-sm update">Update Session</button>
+      class="btn btn-outline-primary btn-sm update">Update Session</button>
       <input type="text" name="session[coach]" placeholder="Coach">
       <input type="text" name="session[length]" placeholder="Length">
       <input type="text" name="session[activity]" placeholder="Activity">
