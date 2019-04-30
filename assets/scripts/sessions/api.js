@@ -43,8 +43,11 @@ const updateSession = function (data, id) {
 
 const allSessions = function () {
   return $.ajax({
-    url: config.apiUrl + '/sessions',
-    method: 'GET'
+    url: config.apiUrl + 'sessions',
+    method: 'GET',
+    headers: {
+      Authorization: 'Token token=' + store.user.token
+    }
   })
 }
 

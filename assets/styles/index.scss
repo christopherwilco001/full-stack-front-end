@@ -1,9 +1,19 @@
 @import '~bootstrap/scss/bootstrap';
 @import url('https://fonts.googleapis.com/css?family=Wendy+One');
+@import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great');
+@import url('https://fonts.googleapis.com/css?family=Cabin+Sketch:700|Fredericka+the+Great');
+@import url('https://fonts.googleapis.com/css?family=Cabin+Sketch:700|Fredericka+the+Great|Staatliches');
+
 
 
 body {
-  background-color: #F2F202;
+  background-image: url('public/skates.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.background {
+  background-color: rgba(0, 0, 0, .3);
 }
 
 #change-password {
@@ -18,39 +28,56 @@ body {
 }
 
 .delete {
-  padding: 5px 10px;
+  display: inline-block;
+  padding: 5px 5px;
   text-align: left;
 }
 
 #endMessage {
+  color: white;
+  font-family: 'Staatliches', cursive;
+  font-size: 25px;
   text-align: center;
 }
 
 h1 {
-  font-family: 'Wendy One', sans-serif;
+  color: #B00017;
+  font-style: italic;
+  font-family: 'Fredericka the Great', cursive;
+  font-size: 75px;
   padding: 20px 50px;
   text-align: center;
+
 }
 
 h3 {
-  font-size: 20px;
+  color: #B00017;
+  font-family: 'Fredericka the Great', cursive;
+  font-size: 55px;
   padding: 5px 10px;
   text-align: left;
+  text-decoration: underline;
 }
 
 #message {
+  color: white;
+  font-family: 'Staatliches', cursive;
+  font-size: 25px;
   text-align: center;
 }
 
 p {
-  padding: 5px 10px;
+  color: #FACD02;
+  font-family: 'Cabin Sketch', cursive;
+  font-size: 30px;
+  padding: 1px 10px;
   text-align: left;
 }
 
-section {
-  padding: 15px 30px;
-  text-align: center;
-}
+// section {
+//   padding: 15px 30px;
+//   text-align: center;
+// }
 
 #sign-up {
   padding: 15px 30px;
@@ -74,6 +101,7 @@ section {
 }
 
 .update {
-  padding: 5px 10px;
+  display: inline-block;
+  padding: 5px 5px;
   text-align: left;
 }

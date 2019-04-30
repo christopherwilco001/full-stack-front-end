@@ -2,18 +2,18 @@
   {{log session}} <!-- helper, kinda like a console.log-->
   <section data-id="{{session.id}}">
     <h3>Session:</h3>
-      <p>{{session.coach}}</p>
-      <p>{{session.length}}</p>
-      <p>{{session.activity}}</p>
-      <p>{{session.id}}</p>
+      <p>Coach: {{session.coach}}</p>
+      <p>Time: {{session.length}}</p>
+      <p>Activity: {{session.activity}}</p>
+      <p>ID: {{session.id}}</p>
 
       <form class="delete" data-id="{{session.id}}">
-        <button data-id="{{session.id}}" class="btn btn-danger btn-sm delete">Remove</button>
+        <button data-id="{{session.id}}" class="btn btn-info btn-sm delete">Delete Session</button>
       </form>
 
     <form class="update" data-id="{{session.id}}">
       <button type="submit" value="Update Session" data-id="{{session.id}}"
-      class="btn btn-danger btn-sm update">Update</button>
+      class="btn btn-info btn-sm update">Update Session</button>
       <input type="text" name="session[coach]" placeholder="Coach">
       <input type="text" name="session[length]" placeholder="Length">
       <input type="text" name="session[activity]" placeholder="Activity">

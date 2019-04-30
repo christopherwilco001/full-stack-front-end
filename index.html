@@ -12,75 +12,78 @@
       <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
     </head>
     <body>
-      <div class="sign-up-container">
-        <form id="sign-up">
-          <input type="email" name="credentials[email]" placeholder="Email">
-          <input type="password" name="credentials[password]" placeholder="Password">
-          <input type="password" name="credentials[password_confirmation]" placeholder="Password Confirmation" >
-          <input type="submit" value="Sign Up!" class="btn btn-secondary btn-sm">
-        </form>
-      </div>
+      <div class="background">
+        <div class="sign-up-container">
+          <form id="sign-up">
+            <input type="email" name="credentials[email]" placeholder="Email">
+            <input type="password" name="credentials[password]" placeholder="Password">
+            <input type="password" name="credentials[password_confirmation]" placeholder="Password Confirmation" >
+            <input type="submit" value="Sign Up!" class="btn btn-outline-danger btn-sm">
+          </form>
+        </div>
 
-      <div class="sign-in-container">
-        <form id="sign-in">
-          <input type="email" name="credentials[email]" placeholder="Email">
-          <input type="password" name="credentials[password]" placeholder="Password">
-          <input type="submit" value="Sign In!" class="btn btn-secondary btn-sm">
-        </form>
-      </div>
+          <div class="sign-in-container">
+            <form id="sign-in">
+              <input type="email" name="credentials[email]" placeholder="Email">
+              <input type="password" name="credentials[password]" placeholder="Password">
+              <input type="submit" value="Sign In!" class="btn btn-outline-danger btn-sm">
+            </form>
+          </div>
 
 
 
-      <h1>Player Development</h1>
+          <h1>Player Development</h1>
 
-      <div id="message"></div>
-      <div id="endMessage"></div>
+          <div id="message"></div>
+          <div id="endMessage"></div>
 
-      <div class="create-session-container">
-        <form id="create-session">
-          <input type="submit" value="Create Session" class="btn btn-outline-secondary">
+          <div class="create-session-container">
+            <form id="create-session">
+              <input type="submit" value="Create Session" class="btn btn-outline-danger btn-sm">
+              <input type="text" name="session[coach]" placeholder="Coach">
+              <input type="text" name="session[length]" placeholder="Length">
+              <input type="text" name="session[activity]" placeholder="Activity">
+            </form>
+          </div>
+
+          <div class="show-session-container">
+            <button id="allSessions" class="btn btn-outline-warning btn-sm">All Sessions</button>
+          </div>
+
+          <!-- <div class="update-session-container">
+          <form id="update-session">
+          <input type="submit" value="Update Session">
           <input type="text" name="session[coach]" placeholder="Coach">
           <input type="text" name="session[length]" placeholder="Length">
           <input type="text" name="session[activity]" placeholder="Activity">
+          <input type="text" name="session[id]" placeholder="Session Id">
         </form>
-      </div>
+      </div> -->
 
-      <div class="show-session-container">
-        <button id="allSessions" class="btn btn-secondary btn-sm">All Sessions</button>
-      </div>
-
-      <!-- <div class="update-session-container">
-      <form id="update-session">
-      <input type="submit" value="Update Session">
-      <input type="text" name="session[coach]" placeholder="Coach">
-      <input type="text" name="session[length]" placeholder="Length">
-      <input type="text" name="session[activity]" placeholder="Activity">
-      <input type="text" name="session[id]" placeholder="Session Id">
+      <!-- <div class="delete-session-container">
+      <form id="delete-session">
+      <input type="submit" value="Delete Session">
     </form>
-  </div> -->
+    </div> -->
 
-  <!-- <div class="delete-session-container">
-  <form id="delete-session">
-  <input type="submit" value="Delete Session">
-</form>
-</div> -->
 
-<div class="sign-out-container">
-  <form id="sign-out">
-    <input type="submit" value="Sign Out!" class="btn btn-secondary btn-sm">
-  </form>
-</div>
+    <div class="sign-out-container">
+      <form id="sign-out">
+        <input type="submit" value="Sign Out!" class="btn btn-outline-warning btn-sm">
+      </form>
+    </div>
 
-<form id="change-password">
-  <input type="password" name="passwords[old]" placeholder="Old password">
-  <input type="password" name="passwords[new]" placeholder="New password">
-  <input type="submit" value="Change Password" class="btn btn-outline-secondary">
-</form>
-<main>
-  <div id="content" class="content"></div>
-</main>
-<footer>
-  <section>Created by: Christopher Wilcox</section>
-</footer>
+    <form id="change-password">
+      <input type="password" name="passwords[old]" placeholder="Old password">
+      <input type="password" name="passwords[new]" placeholder="New password">
+      <input type="submit" value="Change Password" class="btn btn-outline-danger btn-sm">
+    </form>
+    <main>
+      <div id="content" class="content"></div>
+    </main>
+  <!-- <footer>
+    <section>Created by: Christopher Wilcox</section>
+  </footer> -->
+  </div>
 </body>
 </html>

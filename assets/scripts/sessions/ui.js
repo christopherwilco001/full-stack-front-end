@@ -27,13 +27,13 @@ const onDeleteSessionSuccess = () => {
   }, 2000)
 }
 
-const failure = (error) => {
-  console.error(error)
-}
+// const failure = (error) => {
+//   console.error(error)
+// }
 
 module.exports = {
   getSessionSuccess,
   updateSessionSuccess,
-  onDeleteSessionSuccess,
-  failure
+  onDeleteSessionSuccess
+  // failure
 }

@@ -77,7 +77,7 @@ const signOutSuccess = function (data) {
   $('#sign-up').show(1200)
   $('#sign-in').show(1200)
   $('.sign-out-container').hide()
-  $('#message').text('Sign out successful!')
+  $('#message').text('Signed out successfully!')
   $('#message').show()
   $('.show-session-container').hide()
   $('#change-password').hide()
