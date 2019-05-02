@@ -14,11 +14,10 @@ const getSessionSuccess = (data) => {
 const updateSessionSuccess = (data) => {
   const showSessionsHtml = showSessionsTemplate({ sessions: data.sessions })
   $('.content').html(showSessionsHtml)
-  $('#endMessage').text('Updated your session!')
+  $('#message').text('Updated your session!')
   setTimeout(function () {
-    $('#endMessage').text('')
+    $('#message').text('')
   }, 2000)
-  $('#message').hide('')
 }
 
 const onDeleteSessionSuccess = () => {
