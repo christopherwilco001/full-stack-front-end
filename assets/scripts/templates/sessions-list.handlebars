@@ -1,5 +1,4 @@
 {{#each sessions as |session|}}
-  {{log session}} <!-- helper, kinda like a console.log-->
   <section data-id="{{session.id}}">
     <h3>Session:</h3>
       <p>Coach: {{session.coach}}</p>
@@ -7,9 +6,9 @@
       <p>Activity: {{session.activity}}</p>
       <p>ID: {{session.id}}</p>
 
-      <form class="delete" data-id="{{session.id}}">
-        <button data-id="{{session.id}}" class="btn btn-danger btn-sm delete">Delete Session</button>
-      </form>
+    <form class="delete" data-id="{{session.id}}">
+      <button data-id="{{session.id}}" class="btn btn-danger btn-sm delete">Delete Session</button>
+    </form>
 
     <form class="update" data-id="{{session.id}}">
       <button type="submit" value="Update Session" data-id="{{session.id}}"

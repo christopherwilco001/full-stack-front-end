@@ -14,26 +14,31 @@ const getSessionSuccess = (data) => {
 const updateSessionSuccess = (data) => {
   const showSessionsHtml = showSessionsTemplate({ sessions: data.sessions })
   $('.content').html(showSessionsHtml)
-  $('#message').text('Updated your session!')
+  $('#endMessage').text('Updated your session!')
   setTimeout(function () {
-    $('#message').text('')
+    $('#endMessage').text('')
   }, 2000)
 }
 
 const onDeleteSessionSuccess = () => {
-  $('#message').text('Deleted session successfully!')
+  $('#endMessage').text('Deleted session successfully!')
   setTimeout(function () {
-    $('#message').text('')
+    $('#endMessage').text('')
   }, 2000)
+  $('#message').hide('')
 }
 
-// const failure = (error) => {
-//   console.error(error)
-// }
+const onCreateSessionSuccess = () => {
+  $('#endMessage').text('Session created successfully!')
+  setTimeout(function () {
+    $('#endMessage').text('')
+  }, 2000)
+  $('form').trigger('reset')
+}
 
 module.exports = {
   getSessionSuccess,
   updateSessionSuccess,
-  onDeleteSessionSuccess
-  // failure
+  onDeleteSessionSuccess,
+  onCreateSessionSuccess
 }
