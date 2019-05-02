@@ -33,6 +33,7 @@ const onUpdateSession = function (event) {
   const data = getFormFields(event.target)
   api.updateSession(data, id)
     .then(() => onAllSession(event))
+    .then(ui.updateSessionSuccess)
     .catch(ui.failure)
 }
 
