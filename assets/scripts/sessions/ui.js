@@ -18,6 +18,7 @@ const updateSessionSuccess = (data) => {
   setTimeout(function () {
     $('#endMessage').text('')
   }, 2000)
+  $('#message').hide('')
 }
 
 const onDeleteSessionSuccess = () => {
