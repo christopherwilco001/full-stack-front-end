@@ -21,6 +21,11 @@ body {
   text-align: center;
 }
 
+.create-meal-container {
+  display: none;
+  padding: 15px 30px;
+  text-align: center;
+}
 .create-session-container {
   display: none;
   padding: 15px 30px;
@@ -28,9 +33,15 @@ body {
 }
 
 .delete {
-  display: inline-block;
-  padding: 5px 5px;
-  text-align: left;
+  display: left;
+  margin-left: 5px;
+  text-align: center;
+}
+
+.deletMeal {
+  display: left;
+  margin-left: 5px;
+  text-align: center;
 }
 
 #endMessage {
@@ -40,10 +51,17 @@ body {
   text-align: center;
 }
 
+// .favorite {
+//   display: left;
+//   margin-bottom: 5px;
+//   margin-left: 5px;
+//   text-align: center;
+// }
+
 h1 {
   color: #B00017;
   font-family: 'Fredericka the Great', cursive;
-  font-size: 75px;
+  font-size: 55px;
   font-style: italic;
   padding: 20px 50px;
   text-align: center;
@@ -52,7 +70,7 @@ h1 {
 h3 {
   color: #B00017;
   font-family: 'Fredericka the Great', cursive;
-  font-size: 55px;
+  font-size: 45px;
   padding: 5px 10px;
   text-align: left;
   text-decoration: underline;
@@ -68,7 +86,7 @@ h3 {
 p {
   color: #FACD02;
   font-family: 'Cabin Sketch', cursive;
-  font-size: 30px;
+  font-size: 20px;
   padding: 1px 5px;
   text-align: left;
 }
@@ -85,17 +103,30 @@ p {
 
 .show-session-container {
   display: none;
+  padding: 10px;
+  text-align: center;
+}
+
+.show-meal-container {
+  display: none;
+  padding: 10px;
   text-align: center;
 }
 
 .sign-out-container {
   display: none;
-  padding: 15px 30px;
+  padding: 10px;
   text-align: center;
 }
 
 .update {
-  display: inline-block;
-  padding: 5px 5px;
+  display: left;
+  padding: 5px;
+  text-align: left;
+}
+
+.updateMeal {
+  display: left;
+  padding: 5px;
   text-align: left;
 }

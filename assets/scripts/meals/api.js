@@ -3,26 +3,25 @@
 const config = require('../config')
 const store = require('../store')
 
-const createSession = function (data) {
+const createMeal = function (data) {
   return $.ajax({
-    url: config.apiUrl + '/sessions',
+    url: config.apiUrl + '/meals',
     method: 'POST',
     headers: {
       Authorization: 'Token token=' + store.user.token
     },
     data: {
       session: {
-        'coach': `${data.session.coach}`,
-        'length': `${data.session.length}`,
-        'activity': `${data.session.activity}`
+        'name': `${data.meal.name}`,
+        'calories': `${data.meal.calories}`
       }
     }
   })
 }
 
-const deleteSession = function (id) {
+const deleteMeal = function (id) {
   return $.ajax({
-    url: config.apiUrl + `/sessions/${id}`,
+    url: config.apiUrl + `/meals/${id}`,
     method: 'DELETE',
     headers: {
       Authorization: 'Token token=' + store.user.token
@@ -30,9 +29,9 @@ const deleteSession = function (id) {
   })
 }
 
-const updateSession = function (data, id) {
+const updateMeal = function (data, id) {
   return $.ajax({
-    url: config.apiUrl + `sessions/${id}`,
+    url: config.apiUrl + `meals/${id}`,
     method: 'PATCH',
     headers: {
       Authorization: 'Token token=' + store.user.token
@@ -41,9 +40,9 @@ const updateSession = function (data, id) {
   })
 }
 
-const allSessions = function () {
+const allMeals = function () {
   return $.ajax({
-    url: config.apiUrl + 'sessions',
+    url: config.apiUrl + 'meals',
     method: 'GET',
     headers: {
       Authorization: 'Token token=' + store.user.token
@@ -51,7 +50,7 @@ const allSessions = function () {
   })
 }
 
-// const favoriteSessions = function () {
+// const favoriteMeals = function () {
 //   return $.ajax({
 //     url: config.apiUrl + 'sessions',
 //     method: 'GET',
@@ -62,9 +61,9 @@ const allSessions = function () {
 // }
 
 module.exports = {
-  allSessions,
-  createSession,
-  deleteSession,
-  updateSession
-  // favoriteSessions
+  allMeals,
+  createMeal,
+  deleteMeal,
+  updateMeal
+  // favoriteMeals
 }

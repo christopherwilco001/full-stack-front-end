@@ -33,11 +33,15 @@ const signInSuccess = function (data) {
   $('#sign-up').hide(2000)
   store.user = data.user
   $('#change-password').show()
+  $('.show-favorites-container').show()
   $('.show-session-container').show()
   $('.sign-out-container').show()
+  $('..create-meal-container').show()
   $('.create-session-container').show()
   $('.delete').show()
+  $('.deleteMeal').show()
   $('.update').show()
+  $('.updateMeal').show()
   $('form').trigger('reset')
 }
 
@@ -81,10 +85,13 @@ const signOutSuccess = function (data) {
   $('#message').show()
   $('.show-session-container').hide()
   $('#change-password').hide()
+  $('.create-meal-container').hide()
   $('.create-session-container').hide()
   $('.content').hide()
   $('.delete').hide()
+  $('.deleteMeal').hide()
   $('.update').hide()
+  $('.updateMeal').hide()
   store.user = null
   $('form').trigger('reset')
 }

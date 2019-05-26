@@ -4,52 +4,52 @@ const getFormFields = require('./../../../lib/get-form-fields.js')
 const api = require('./api')
 const ui = require('./ui')
 
-const onAllSession = function (event) {
+const onAllMeal = function (event) {
   event.preventDefault()
-  api.allSessions()
-    .then(ui.getSessionSuccess)
+  api.allMeals()
+    .then(ui.getMealSuccess)
     .catch(ui.failure)
 }
 
 // const onGetFavorites = function (event) {
 //   event.preventDefault()
-//   api.favoriteSessions()
+//   api.favoriteMeals()
 //     .then(ui.getFavoritesSuccess)
 //     .catch(ui.failure)
 // }
 
-const onCreateSession = function (event) {
+const onCreateMeal = function (event) {
   event.preventDefault()
   const data = getFormFields(event.target)
-  api.createSession(data)
-    .then(ui.onCreateSessionSuccess)
+  api.createMeal(data)
+    .then(ui.onCreateMealSuccess)
     .catch(ui.failure)
 }
 
-const onDeleteSession = function (event) {
+const onDeleteMeal = function (event) {
   event.preventDefault()
   const id = $(event.target).data('id')
-  api.deleteSession(id)
-    .then(() => onAllSession(event))
-    .then(ui.onDeleteSessionSuccess)
+  api.deleteMeal(id)
+    .then(() => onAllMeal(event))
+    .then(ui.onDeleteMealSuccess)
     .catch(ui.failure)
 }
 
-const onUpdateSession = function (event) {
+const onUpdateMeal = function (event) {
   event.preventDefault()
   const id = $(event.target).data('id')
   const data = getFormFields(event.target)
-  api.updateSession(data, id)
-    .then(ui.updateSessionSuccess)
-    .then(() => onAllSession(event))
+  api.updateMeal(data, id)
+    .then(ui.updateMealSuccess)
+    .then(() => onAllMeal(event))
     .catch(ui.failure)
 }
 
 const addHandlers = function () {
-  $('#create-session').on('submit', onCreateSession)
-  $('#content').on('click', '.delete', onDeleteSession)
-  $('#content').on('submit', '.update', onUpdateSession)
-  $('#allSessions').on('click', onAllSession)
+  $('#create-meal').on('submit', onCreateMeal)
+  $('#content').on('click', '.deleteMeal', onDeleteMeal)
+  $('#content').on('submit', '.updateMeal', onUpdateMeal)
+  $('#allMeals').on('click', onAllMeal)
   // $('#allFavorites').on('click', onGetFavorites)
 }
 

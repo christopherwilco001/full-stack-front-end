@@ -6,7 +6,11 @@
       <p>Activity: {{session.activity}}</p>
       <p>ID: {{session.id}}</p>
 
-    <form class="delete" data-id="{{session.id}}">
+    <!-- <form class="favoriteSession" data-id="{{session.id}}">
+      <button data-id="{{session.id}}" class="btn btn-success btn-sm favorite">Add Favorite</button>
+    </form> -->
+
+    <form class="deleteSession" data-id="{{session.id}}">
       <button data-id="{{session.id}}" class="btn btn-danger btn-sm delete">Delete Session</button>
     </form>
 
