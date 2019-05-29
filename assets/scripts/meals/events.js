@@ -11,13 +11,6 @@ const onAllMeal = function (event) {
     .catch(ui.failure)
 }
 
-// const onGetFavorites = function (event) {
-//   event.preventDefault()
-//   api.favoriteMeals()
-//     .then(ui.getFavoritesSuccess)
-//     .catch(ui.failure)
-// }
-
 const onCreateMeal = function (event) {
   event.preventDefault()
   const data = getFormFields(event.target)

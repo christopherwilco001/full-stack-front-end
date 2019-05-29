@@ -11,7 +11,7 @@ const createMeal = function (data) {
       Authorization: 'Token token=' + store.user.token
     },
     data: {
-      session: {
+      meal: {
         'name': `${data.meal.name}`,
         'calories': `${data.meal.calories}`
       }

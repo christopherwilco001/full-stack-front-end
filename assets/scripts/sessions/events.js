@@ -11,13 +11,6 @@ const onAllSession = function (event) {
     .catch(ui.failure)
 }
 
-// const onGetFavorites = function (event) {
-//   event.preventDefault()
-//   api.favoriteSessions()
-//     .then(ui.getFavoritesSuccess)
-//     .catch(ui.failure)
-// }
-
 const onCreateSession = function (event) {
   event.preventDefault()
   const data = getFormFields(event.target)

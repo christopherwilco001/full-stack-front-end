@@ -33,10 +33,10 @@ const signInSuccess = function (data) {
   $('#sign-up').hide(2000)
   store.user = data.user
   $('#change-password').show()
-  $('.show-favorites-container').show()
+  $('.show-meal-container').show()
   $('.show-session-container').show()
   $('.sign-out-container').show()
-  $('..create-meal-container').show()
+  $('.create-meal-container').show()
   $('.create-session-container').show()
   $('.delete').show()
   $('.deleteMeal').show()
