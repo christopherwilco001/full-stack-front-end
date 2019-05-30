@@ -51,16 +51,6 @@ const allSessions = function () {
   })
 }
 
-// const favoriteSessions = function () {
-//   return $.ajax({
-//     url: config.apiUrl + 'sessions',
-//     method: 'GET',
-//     headers: {
-//       Authorization: 'Token token=' + store.user.token
-//     }
-//   })
-// }
-
 module.exports = {
   allSessions,
   createSession,

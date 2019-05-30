@@ -1,17 +1,16 @@
 {{#each meals as |meal|}}
-  <section data-id="{{session.id}}">
+  <section data-id="{{meal.id}}">
     <h3>Meal:</h3>
       <p>Name: {{meal.name}}</p>
       <p>Calories: {{meal.calories}}</p>
       <p>ID: {{meal.id}}</p>
 
-    <!-- <form class="favoriteSession" data-id="{{session.id}}">
-      <button data-id="{{session.id}}" class="btn btn-success btn-sm favorite">Add Favorite</button>
+    <!-- <form class="favoriteMeal" data-id="{{meal.id}}">
+      <button data-id="{{meal.id}}" class="btn btn-success btn-sm favorite">Add Favorite</button>
     </form> -->
 
-    <form class="deleteMeal" data-id="{{session.id}}">
-      <button data-id="{{meal.id}}" class="btn btn-danger btn-sm delete">Delete Meal</button>
-    </form>
+
+      <button data-id="{{meal.id}}" class="btn btn-danger btn-sm deleteMeal">Delete Meal</button>
 
     <form class="updateMeal" data-id="{{meal.id}}">
       <button type="submit" value="Update Meal" data-id="{{meal.id}}"

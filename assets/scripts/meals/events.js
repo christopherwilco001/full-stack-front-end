@@ -13,6 +13,7 @@ const onAllMeal = function (event) {
 
 const onCreateMeal = function (event) {
   event.preventDefault()
+  console.log()
   const data = getFormFields(event.target)
   api.createMeal(data)
     .then(ui.onCreateMealSuccess)
@@ -43,7 +44,6 @@ const addHandlers = function () {
   $('#content').on('click', '.deleteMeal', onDeleteMeal)
   $('#content').on('submit', '.updateMeal', onUpdateMeal)
   $('#allMeals').on('click', onAllMeal)
-  // $('#allFavorites').on('click', onGetFavorites)
 }
 
 module.exports = {

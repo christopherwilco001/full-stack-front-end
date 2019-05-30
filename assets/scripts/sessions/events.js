@@ -43,7 +43,6 @@ const addHandlers = function () {
   $('#content').on('click', '.delete', onDeleteSession)
   $('#content').on('submit', '.update', onUpdateSession)
   $('#allSessions').on('click', onAllSession)
-  // $('#allFavorites').on('click', onGetFavorites)
 }
 
 module.exports = {

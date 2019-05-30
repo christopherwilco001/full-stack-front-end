@@ -50,16 +50,6 @@ const allMeals = function () {
   })
 }
 
-// const favoriteMeals = function () {
-//   return $.ajax({
-//     url: config.apiUrl + 'sessions',
-//     method: 'GET',
-//     headers: {
-//       Authorization: 'Token token=' + store.user.token
-//     }
-//   })
-// }
-
 module.exports = {
   allMeals,
   createMeal,
